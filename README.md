@@ -25,9 +25,10 @@ The entire architecture is modular, resilient by design, and fully decoupled. It
 ---
 
 ## Repository Directory Structure
+
 To set up this repository locally, organize your source files according to the following production directory layout:
 
-
+```text
 recomart/
 ├── .dvc/                       # Data Version Control internal configurations
 ├── airflow/
@@ -43,15 +44,16 @@ recomart/
 │   ├── data_quality_report.json # Continuous validation report output
 │   └── model_metrics.json      # Evaluation breakdown tracking file
 ├── schema.sql                  # PostgreSQL structural setup for data warehousing
-├── dvc.yaml                    # DVC multi-stage pipeline pipeline specification
+├── dvc.yaml                    # DVC multi-stage pipeline specification
 └── scripts/                    # Decoupled component scripts executed by handlers
     ├── 01_ingest.py            # Multi-source data capture handler
     ├── 02_validate.py          # Schema mapping and criteria testing script
     ├── 03_prepare.py           # Deduplication, filtering, and timestamp compiler
-    ├── 04_transform.py        # Behavioral matrices builder and PostgreSQL sync
+    ├── 04_transform.py         # Behavioral matrices builder and PostgreSQL sync
     ├── 05_feature_store.py     # Feature materialization coordinator
     └── 06_train.py             # Model training matrix mapping & MLflow engine
 
+```
 
 ## Step-by-Step Pipeline Implementation Details
 
