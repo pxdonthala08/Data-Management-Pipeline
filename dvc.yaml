@@ -1,0 +1,49 @@
+stages:
+  ingest:
+    cmd: python scripts/01_ingest.py
+    deps:
+      - scripts/01_ingest.py
+    outs:
+      - data/raw/clickstream/latest/events.csv
+      - data/raw/catalog/latest/item_properties_part1.csv
+      - data/raw/catalog/latest/item_properties_part2.csv
+
+  validate:
+    cmd: python scripts/02_validate.py
+    deps:
+      - scripts/02_validate.py
+      - data/raw/clickstream/latest/events.csv
+    outs:
+      - reports/data_quality_report.json
+
+  prepare:
+    cmd: python scripts/03_prepare.py
+    deps:
+      - scripts/03_prepare.py
+      - data/raw/clickstream/latest/events.csv
+    outs:
+      - data/prepared/events_cleaned.parquet
+      - data/prepared/item_features.parquet
+    plots:
+      - reports/plots/event_distribution.png
+
+  transform:
+    cmd: python scripts/04_transform.py
+    deps:
+      - scripts/04_transform.py
+      - data/prepared/events_cleaned.parquet
+    outs:
+      - data/transformed/user_features.parquet
+      - data/transformed/item_features.parquet
+      - data/transformed/interactions.parquet
+
+  train:
+    cmd: python scripts/06_train.py
+    deps:
+      - scripts/06_train.py
+      - data/transformed/interactions.parquet
+    outs:
+      - models/svd_model.pkl
+    metrics:
+      - reports/model_metrics.json:
+          cache: false
