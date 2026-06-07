@@ -7,8 +7,8 @@ import logging
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO)
 
-# 🔹 Update if needed
-DB_URL = "postgresql://recomart_admin:recomartadmin@recomart-db-instance.cle0w60wm8ki.ap-south-1.rds.amazonaws.com:5432/recomart_db"
+
+DB_URL = ""
 
 
 # ── USER FEATURES ──────────────────────────────────────
