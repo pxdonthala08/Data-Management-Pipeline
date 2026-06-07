@@ -1,0 +1,57 @@
+2026-04-29 11:52:06,958 [INFO] ============================================================
+2026-04-29 11:52:06,958 [INFO] RECOMART DATA INGESTION STARTED
+2026-04-29 11:52:06,958 [INFO] ============================================================
+2026-04-29 11:52:08,260 [INFO] Ingested events: 2,756,101 rows, 89.9 MB → data/raw/clickstream/20260429_115206/events.csv
+2026-04-29 11:52:08,260 [INFO] Updated latest → data/raw/clickstream/20260429_115206
+2026-04-29 11:52:15,745 [INFO] Ingested item_properties_part1: 10,999,999 rows, 461.9 MB → data/raw/catalog/20260429_115206/item_properties_part1.csv
+2026-04-29 11:52:15,745 [INFO] Updated latest → data/raw/catalog/20260429_115206
+2026-04-29 11:52:22,250 [INFO] Ingested item_properties_part2: 9,275,903 rows, 390.0 MB → data/raw/catalog/20260429_115206/item_properties_part2.csv
+2026-04-29 11:52:22,251 [INFO] Updated latest → data/raw/catalog/20260429_115206
+2026-04-29 11:52:22,252 [INFO] Ingested category_tree: 1,669 rows, 0.0 MB → data/raw/taxonomy/20260429_115206/category_tree.csv
+2026-04-29 11:52:22,252 [INFO] Updated latest → data/raw/taxonomy/20260429_115206
+2026-04-29 11:52:23,118 [INFO] API fetch successful: http://localhost:5001/api/products
+2026-04-29 11:52:23,142 [INFO] ✓ Ingested API data: 5000 records → data/raw/api_enrichment/20260429_115206/product_popularity.json
+2026-04-29 11:52:23,142 [INFO] Updated latest → data/raw/api_enrichment/20260429_115206
+2026-04-29 11:52:23,271 [INFO] Found credentials from IAM Role: recomart-s3-role
+2026-04-29 11:52:23,592 [INFO] Uploaded to s3://recomart-data-lake-001/raw/api_enrichment/20260429_100456/product_popularity.json
+2026-04-29 11:52:23,624 [INFO] Uploaded to s3://recomart-data-lake-001/raw/api_enrichment/20260429_115206/product_popularity.json
+2026-04-29 11:52:26,670 [INFO] Uploaded to s3://recomart-data-lake-001/raw/catalog/20260429_114343/item_properties_part1.csv
+2026-04-29 11:52:30,195 [INFO] Uploaded to s3://recomart-data-lake-001/raw/catalog/20260429_114343/item_properties_part2.csv
+2026-04-29 11:52:30,223 [INFO] Uploaded to s3://recomart-data-lake-001/raw/catalog/20260429_100456/item_properties_part2.csv.dvc
+2026-04-29 11:52:30,244 [INFO] Uploaded to s3://recomart-data-lake-001/raw/catalog/20260429_100456/item_properties_part1.csv.dvc
+2026-04-29 11:52:30,264 [INFO] Uploaded to s3://recomart-data-lake-001/raw/catalog/20260429_100456/.gitignore
+2026-04-29 11:52:33,798 [INFO] Uploaded to s3://recomart-data-lake-001/raw/catalog/20260429_100456/item_properties_part1.csv
+2026-04-29 11:52:36,554 [INFO] Uploaded to s3://recomart-data-lake-001/raw/catalog/20260429_100456/item_properties_part2.csv
+2026-04-29 11:52:39,672 [INFO] Uploaded to s3://recomart-data-lake-001/raw/catalog/20260429_111945/item_properties_part1.csv
+2026-04-29 11:52:42,558 [INFO] Uploaded to s3://recomart-data-lake-001/raw/catalog/20260429_111945/item_properties_part2.csv
+2026-04-29 11:52:45,981 [INFO] Uploaded to s3://recomart-data-lake-001/raw/catalog/20260429_112927/item_properties_part1.csv
+2026-04-29 11:52:47,541 [INFO] Uploaded to s3://recomart-data-lake-001/raw/catalog/20260429_112927/item_properties_part2.csv
+2026-04-29 11:52:48,626 [INFO] Uploaded to s3://recomart-data-lake-001/raw/catalog/20260429_115206/item_properties_part1.csv
+2026-04-29 11:52:49,558 [INFO] Uploaded to s3://recomart-data-lake-001/raw/catalog/20260429_115206/item_properties_part2.csv
+2026-04-29 11:52:50,720 [INFO] Uploaded to s3://recomart-data-lake-001/raw/catalog/20260429_113609/item_properties_part1.csv
+2026-04-29 11:52:52,080 [INFO] Uploaded to s3://recomart-data-lake-001/raw/catalog/20260429_113609/item_properties_part2.csv
+2026-04-29 11:52:54,831 [INFO] Uploaded to s3://recomart-data-lake-001/raw/catalog/20260429_112243/item_properties_part1.csv
+2026-04-29 11:52:57,804 [INFO] Uploaded to s3://recomart-data-lake-001/raw/catalog/20260429_112243/item_properties_part2.csv
+2026-04-29 11:53:01,747 [INFO] Uploaded to s3://recomart-data-lake-001/raw/catalog/20260429_113612/item_properties_part1.csv
+2026-04-29 11:53:05,908 [INFO] Uploaded to s3://recomart-data-lake-001/raw/catalog/20260429_113612/item_properties_part2.csv
+2026-04-29 11:53:07,507 [INFO] Uploaded to s3://recomart-data-lake-001/raw/clickstream/20260429_114343/events.csv
+2026-04-29 11:53:08,149 [INFO] Uploaded to s3://recomart-data-lake-001/raw/clickstream/20260429_100456/events.csv
+2026-04-29 11:53:08,170 [INFO] Uploaded to s3://recomart-data-lake-001/raw/clickstream/20260429_100456/.gitignore
+2026-04-29 11:53:08,193 [INFO] Uploaded to s3://recomart-data-lake-001/raw/clickstream/20260429_100456/events.csv.dvc
+2026-04-29 11:53:08,868 [INFO] Uploaded to s3://recomart-data-lake-001/raw/clickstream/20260429_111945/events.csv
+2026-04-29 11:53:09,582 [INFO] Uploaded to s3://recomart-data-lake-001/raw/clickstream/20260429_112927/events.csv
+2026-04-29 11:53:09,913 [INFO] Uploaded to s3://recomart-data-lake-001/raw/clickstream/20260429_115206/events.csv
+2026-04-29 11:53:10,390 [INFO] Uploaded to s3://recomart-data-lake-001/raw/clickstream/20260429_113609/events.csv
+2026-04-29 11:53:11,037 [INFO] Uploaded to s3://recomart-data-lake-001/raw/clickstream/20260429_112243/events.csv
+2026-04-29 11:53:11,754 [INFO] Uploaded to s3://recomart-data-lake-001/raw/clickstream/20260429_113612/events.csv
+2026-04-29 11:53:11,840 [INFO] Uploaded to s3://recomart-data-lake-001/raw/taxonomy/20260429_114343/category_tree.csv
+2026-04-29 11:53:11,865 [INFO] Uploaded to s3://recomart-data-lake-001/raw/taxonomy/20260429_100456/category_tree.csv
+2026-04-29 11:53:11,894 [INFO] Uploaded to s3://recomart-data-lake-001/raw/taxonomy/20260429_111945/category_tree.csv
+2026-04-29 11:53:11,920 [INFO] Uploaded to s3://recomart-data-lake-001/raw/taxonomy/20260429_112927/category_tree.csv
+2026-04-29 11:53:11,944 [INFO] Uploaded to s3://recomart-data-lake-001/raw/taxonomy/20260429_115206/category_tree.csv
+2026-04-29 11:53:11,967 [INFO] Uploaded to s3://recomart-data-lake-001/raw/taxonomy/20260429_113609/category_tree.csv
+2026-04-29 11:53:11,994 [INFO] Uploaded to s3://recomart-data-lake-001/raw/taxonomy/20260429_112243/category_tree.csv
+2026-04-29 11:53:12,016 [INFO] Uploaded to s3://recomart-data-lake-001/raw/taxonomy/20260429_113612/category_tree.csv
+2026-04-29 11:53:12,016 [INFO] ============================================================
+2026-04-29 11:53:12,016 [INFO] INGESTION COMPLETE
+2026-04-29 11:53:12,016 [INFO] ============================================================

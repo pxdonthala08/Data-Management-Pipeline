@@ -1,0 +1,34 @@
+2026-04-29 11:19:45,776 [INFO] ============================================================
+2026-04-29 11:19:45,776 [INFO] RECOMART DATA INGESTION STARTED
+2026-04-29 11:19:45,776 [INFO] ============================================================
+2026-04-29 11:19:46,669 [INFO] Ingested events: 2,756,101 rows, 89.9 MB → data/raw/clickstream/20260429_111945/events.csv
+2026-04-29 11:19:46,669 [INFO] Updated latest → data/raw/clickstream/20260429_111945
+2026-04-29 11:19:53,003 [INFO] Ingested item_properties_part1: 10,999,999 rows, 461.9 MB → data/raw/catalog/20260429_111945/item_properties_part1.csv
+2026-04-29 11:19:53,005 [INFO] Updated latest → data/raw/catalog/20260429_111945
+2026-04-29 11:19:58,794 [INFO] Ingested item_properties_part2: 9,275,903 rows, 390.0 MB → data/raw/catalog/20260429_111945/item_properties_part2.csv
+2026-04-29 11:19:58,794 [INFO] Updated latest → data/raw/catalog/20260429_111945
+2026-04-29 11:19:58,796 [INFO] Ingested category_tree: 1,669 rows, 0.0 MB → data/raw/taxonomy/20260429_111945/category_tree.csv
+2026-04-29 11:19:58,796 [INFO] Updated latest → data/raw/taxonomy/20260429_111945
+2026-04-29 11:19:58,802 [WARNING] Attempt 1/3 failed: HTTPConnectionPool(host='localhost', port=5001): Max retries exceeded with url: /api/products (Caused by NewConnectionError("HTTPConnection(host='localhost', port=5001): Failed to establish a new connection: [Errno 111] Connection refused")). Retrying in 1s...
+2026-04-29 11:19:59,807 [WARNING] Attempt 2/3 failed: HTTPConnectionPool(host='localhost', port=5001): Max retries exceeded with url: /api/products (Caused by NewConnectionError("HTTPConnection(host='localhost', port=5001): Failed to establish a new connection: [Errno 111] Connection refused")). Retrying in 2s...
+2026-04-29 11:20:01,814 [WARNING] Attempt 3/3 failed: HTTPConnectionPool(host='localhost', port=5001): Max retries exceeded with url: /api/products (Caused by NewConnectionError("HTTPConnection(host='localhost', port=5001): Failed to establish a new connection: [Errno 111] Connection refused")). Retrying in 4s...
+2026-04-29 11:20:05,816 [ERROR] All 3 attempts failed for http://localhost:5001/api/products
+2026-04-29 11:20:05,816 [WARNING] API ingestion skipped (service unavailable)
+2026-04-29 11:20:06,260 [INFO] Found credentials from IAM Role: recomart-s3-role
+2026-04-29 11:20:06,894 [INFO] Uploaded to s3://recomart-data-lake-001/raw/api_enrichment/20260429_100456/product_popularity.json
+2026-04-29 11:20:06,928 [INFO] Uploaded to s3://recomart-data-lake-001/raw/catalog/20260429_100456/item_properties_part2.csv.dvc
+2026-04-29 11:20:06,961 [INFO] Uploaded to s3://recomart-data-lake-001/raw/catalog/20260429_100456/item_properties_part1.csv.dvc
+2026-04-29 11:20:07,000 [INFO] Uploaded to s3://recomart-data-lake-001/raw/catalog/20260429_100456/.gitignore
+2026-04-29 11:20:12,080 [INFO] Uploaded to s3://recomart-data-lake-001/raw/catalog/20260429_100456/item_properties_part1.csv
+2026-04-29 11:20:14,529 [INFO] Uploaded to s3://recomart-data-lake-001/raw/catalog/20260429_100456/item_properties_part2.csv
+2026-04-29 11:20:16,369 [INFO] Uploaded to s3://recomart-data-lake-001/raw/catalog/20260429_111945/item_properties_part1.csv
+2026-04-29 11:20:17,925 [INFO] Uploaded to s3://recomart-data-lake-001/raw/catalog/20260429_111945/item_properties_part2.csv
+2026-04-29 11:20:18,400 [INFO] Uploaded to s3://recomart-data-lake-001/raw/clickstream/20260429_100456/events.csv
+2026-04-29 11:20:18,430 [INFO] Uploaded to s3://recomart-data-lake-001/raw/clickstream/20260429_100456/.gitignore
+2026-04-29 11:20:18,461 [INFO] Uploaded to s3://recomart-data-lake-001/raw/clickstream/20260429_100456/events.csv.dvc
+2026-04-29 11:20:20,302 [INFO] Uploaded to s3://recomart-data-lake-001/raw/clickstream/20260429_111945/events.csv
+2026-04-29 11:20:20,353 [INFO] Uploaded to s3://recomart-data-lake-001/raw/taxonomy/20260429_100456/category_tree.csv
+2026-04-29 11:20:20,388 [INFO] Uploaded to s3://recomart-data-lake-001/raw/taxonomy/20260429_111945/category_tree.csv
+2026-04-29 11:20:20,388 [INFO] ============================================================
+2026-04-29 11:20:20,388 [INFO] INGESTION COMPLETE
+2026-04-29 11:20:20,388 [INFO] ============================================================

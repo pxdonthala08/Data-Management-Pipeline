@@ -1,0 +1,23 @@
+2026-04-29 10:04:56,559 [INFO] ============================================================
+2026-04-29 10:04:56,559 [INFO] RECOMART DATA INGESTION STARTED
+2026-04-29 10:04:56,559 [INFO] ============================================================
+2026-04-29 10:04:56,729 [INFO] Ingested events: 2,756,101 rows, 89.9 MB → data/raw/clickstream/20260429_100456/events.csv
+2026-04-29 10:04:56,729 [INFO] Updated latest → data/raw/clickstream/20260429_100456
+2026-04-29 10:04:57,645 [INFO] Ingested item_properties_part1: 10,999,999 rows, 461.9 MB → data/raw/catalog/20260429_100456/item_properties_part1.csv
+2026-04-29 10:04:57,645 [INFO] Updated latest → data/raw/catalog/20260429_100456
+2026-04-29 10:04:58,438 [INFO] Ingested item_properties_part2: 9,275,903 rows, 390.0 MB → data/raw/catalog/20260429_100456/item_properties_part2.csv
+2026-04-29 10:04:58,438 [INFO] Updated latest → data/raw/catalog/20260429_100456
+2026-04-29 10:04:58,439 [INFO] Ingested category_tree: 1,669 rows, 0.0 MB → data/raw/taxonomy/20260429_100456/category_tree.csv
+2026-04-29 10:04:58,439 [INFO] Updated latest → data/raw/taxonomy/20260429_100456
+2026-04-29 10:04:59,253 [INFO] API fetch successful: http://localhost:5001/api/products
+2026-04-29 10:04:59,277 [INFO] ✓ Ingested API data: 5000 records → data/raw/api_enrichment/20260429_100456/product_popularity.json
+2026-04-29 10:04:59,277 [INFO] Updated latest → data/raw/api_enrichment/20260429_100456
+2026-04-29 10:04:59,431 [INFO] Found credentials from IAM Role: recomart-s3-role
+2026-04-29 10:04:59,615 [INFO] Uploaded to s3://recomart-data-lake-001/raw/api_enrichment/20260429_100456/product_popularity.json
+2026-04-29 10:05:00,671 [INFO] Uploaded to s3://recomart-data-lake-001/raw/catalog/20260429_100456/item_properties_part1.csv
+2026-04-29 10:05:01,763 [INFO] Uploaded to s3://recomart-data-lake-001/raw/catalog/20260429_100456/item_properties_part2.csv
+2026-04-29 10:05:02,520 [INFO] Uploaded to s3://recomart-data-lake-001/raw/clickstream/20260429_100456/events.csv
+2026-04-29 10:05:02,547 [INFO] Uploaded to s3://recomart-data-lake-001/raw/taxonomy/20260429_100456/category_tree.csv
+2026-04-29 10:05:02,547 [INFO] ============================================================
+2026-04-29 10:05:02,547 [INFO] INGESTION COMPLETE
+2026-04-29 10:05:02,547 [INFO] ============================================================
