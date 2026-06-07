@@ -1,0 +1,99 @@
+{
+  "timestamp": "2026-04-29T11:53:12.803759",
+  "checks": [
+    {
+      "check": "Schema Match",
+      "status": "PASS",
+      "details": "Columns: ['timestamp', 'visitorid', 'event', 'itemid', 'transactionid']"
+    },
+    {
+      "check": "Missing Values \u2014 timestamp",
+      "status": "PASS",
+      "details": "No missing values"
+    },
+    {
+      "check": "Missing Values \u2014 visitorid",
+      "status": "PASS",
+      "details": "No missing values"
+    },
+    {
+      "check": "Missing Values \u2014 event",
+      "status": "PASS",
+      "details": "No missing values"
+    },
+    {
+      "check": "Missing Values \u2014 itemid",
+      "status": "PASS",
+      "details": "No missing values"
+    },
+    {
+      "check": "Missing Values \u2014 transactionid",
+      "status": "WARN",
+      "details": "2,733,644 missing (99.19%)"
+    },
+    {
+      "check": "Duplicate Rows",
+      "status": "WARN",
+      "details": "460 duplicate rows found"
+    },
+    {
+      "check": "Event Types",
+      "status": "PASS",
+      "details": "Found: {'addtocart', 'view', 'transaction'}"
+    },
+    {
+      "check": "Timestamp Range",
+      "status": "PASS",
+      "details": "2015-05-03 \u2192 2015-09-18 (137 days)"
+    },
+    {
+      "check": "Transaction ID Consistency",
+      "status": "PASS",
+      "details": "0 missing transaction IDs"
+    },
+    {
+      "check": "Schema Match (items)",
+      "status": "PASS",
+      "details": "Columns: ['timestamp', 'itemid', 'property', 'value']"
+    },
+    {
+      "check": "Item Coverage",
+      "status": "PASS",
+      "details": "417,053 items, 1,104 properties"
+    },
+    {
+      "check": "Schema Match (categories)",
+      "status": "PASS",
+      "details": "1,669 rows"
+    },
+    {
+      "check": "Root Categories",
+      "status": "PASS",
+      "details": "25 root nodes"
+    }
+  ],
+  "events_shape": {
+    "rows": 2756101,
+    "columns": 5
+  },
+  "events_summary": {
+    "total_events": 2756101,
+    "unique_visitors": 1407580,
+    "unique_items": 235061,
+    "event_distribution": {
+      "view": 2664312,
+      "addtocart": 69332,
+      "transaction": 22457
+    },
+    "date_range": "2015-05-03 to 2015-09-18"
+  },
+  "item_properties_summary": {
+    "total_records": 20275902,
+    "unique_items": 417053,
+    "unique_properties": 1104
+  },
+  "category_summary": {
+    "total_categories": 1669,
+    "root_categories": 25
+  }
+}
